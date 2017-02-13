@@ -1,0 +1,78 @@
+---
+layout: default
+title: Features &middot; Upscale
+---
+
+<div class="docs-sub-header">
+  {% include masthead.html %}
+  <div class="container">
+    <div class="docs-sub-content">
+      <h2 class="page-title">Features</h2>
+      <p class="page-description">
+			The UpScale SDK includes tools to manage:
+			<ol>
+				<li>Application compilation process</li>
+				<li>Its timing analysis</li>
+				<li>Its execution</li>
+			</ol>
+			</p>
+			
+    </div>
+    
+  </div>
+</div>
+
+<div class="container">
+  <div class="column-group">
+    <div class="column lg-units-8 docs-content">
+      <div class="docs-section">
+			
+			
+			
+			
+<ol>
+  <li><em>Compiler  flow.</em> This flow has a twofold objective: 
+	<ol>
+		<li>to guide the  process to generate the binary that will execute on the many-core architecture  and</li>
+		<li>to generate the application <em>Direct  Acyclic Graph</em> (DAG) used for the timing analysis and run-time components.</li>
+	</ol>
+	</li>
+  <li><em>Analysis  flow</em>. This flow is in charge of deriving timing guarantees  of the parallel execution considering execution time traces of the application  running on the many-core platform and incorporated in the DAG. Timing  guarantees are derived by means of execution time bounds and static scheduler  or dynamic scheduler supported with response time analysis.</li>
+  <li><em>Execution  stack</em>. These two components are in charge of orchestrating  the parallel execution of the application in a time predictable manner, based  on the DAG. </li>
+</ol>
+<h3>Compiler  flow</h3>
+<p>The compiler  must pave the way towards a reliable and predictable timing and schedulability  analyses. The compiler flow of the UpScale SDK guides the process of generating  the binary that will execute on the many-core architecture and creates the  interface that glues the different SDK components. It: </p>
+<ul>
+  <li>Transforms OpenMP directives to the  corresponding set of run-time calls;</li>
+  <li>Builds the OpenMP-DAG required to  perform timing and schedulability analysis, and derive a static task-to-thread  allocation if configured for higher predictability;</li>
+  <li>Automatically generates the set of data  structures needed to store the DAG into the application's memory address space;  and</li>
+  <li>Instruments the code to measure the  execution time of the different parts of the application, i.e. task-parts and  run-time overhead.</li>
+</ul>
+<h3>Execution  stack </h3>
+<p>It is paramount that the OpenMP run-time and  operating system components understand the target hardware design and  incorporate all the features required to orchestrate an efficient and  predictable parallel execution of the real-time tasks. UpScale provides:</p>
+<ul>
+  <li>A  lightweight OpenMP runtime that support the lightweight execution of the OpenMP  accelerator (target directive) and tasking models on the Kalray MPPA 256  platform</li>
+  <li>The  ERIKA3 RTOS, designed to add proper support for multi-core architectures, by  using one single kernel image across several cores. </li>
+</ul>
+<p> </p>
+<h3>Analysis  tools</h3>
+<p>Meeting both the timing and high-performance requirements  for parallel real-time applications which aim at executing on the last generations of many-core  processors requires a deep insight into the interactions between the tasks  at run-time. To this  end, the set of tools that allow the system designer to gather the tasks&rsquo; maximum  execution times on the  target processor as well as to conduct a sound timing and schedulability  analyses in various hardware setups is critical. The UpScale SDK Analysis  toolbox is composed of the <em>Analyser </em>and<em> the Mapper</em>. It provides the tools to:</p>
+<ul>
+  <li>model,  measure, analyse and optimize the system to reach the desired goals</li>
+  <li>to  rapidly identify the bottlenecks and create &ldquo;what if&rdquo; scenarios regarding how  to perform the task-to-core mappings at run-time.</li>
+</ul>
+			
+      </div>
+    </div>
+
+    <div class="column lg-units-4">
+		<br><br><br>
+      <img src="../assets/img/image001.png" alt="" class="content-image"/>
+    </div>
+  </div>
+
+  <div class="column">
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+</div>

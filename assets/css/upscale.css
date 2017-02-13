@@ -1,0 +1,196 @@
+/* line 1, ../../../sass_upscale/components/_docs.scss */
+.lg-units-6 {
+  width: 50%;
+}
+
+/* line 1, ../../../sass_upscale/components/_normalize.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 7, ../../../sass_upscale/components/_normalize.scss */
+h3 {
+  margin: 1em 0;
+}
+
+/* line 2, ../../../sass_upscale/components/_pages.scss */
+.docs-header, .docs-sub-header {
+  background-image: linear-gradient(45deg, #c942b2, #372d5f);
+  background-attachment: fixed;
+}
+
+/* line 14, ../../../sass_upscale/components/_pages.scss */
+.docs-masthead {
+  padding-top: 0;
+  border-bottom: none;
+}
+
+/* line 30, ../../../sass_upscale/components/_pages.scss */
+.docs-title img {
+  width: 160px;
+}
+@media all and (min-width: 960px) {
+  /* line 26, ../../../sass_upscale/components/_pages.scss */
+  .docs-title {
+    padding: 10px 20px;
+    border-radius: 0 0 6px 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(55, 45, 96, 0.2);
+    box-shadow: 5px 5px 15px #372d60;
+  }
+}
+
+/* line 51, ../../../sass_upscale/components/_pages.scss */
+.content-image {
+  max-width: 400px;
+}
+
+/* line 56, ../../../sass_upscale/components/_pages.scss */
+.definition {
+  background: #908ec1;
+  font-size: .825em;
+  padding: 2em;
+  border-radius: 8px;
+}
+/* line 62, ../../../sass_upscale/components/_pages.scss */
+.definition .header {
+  font-weight: bold;
+}
+/* line 65, ../../../sass_upscale/components/_pages.scss */
+.definition dd {
+  background: #f2f2f2;
+  padding: 5px 10px;
+  margin-left: 11em;
+  border-bottom: 1px solid #cccccc;
+}
+/* line 71, ../../../sass_upscale/components/_pages.scss */
+.definition dt {
+  width: 10em;
+  font-weight: normal;
+  padding-top: 5px;
+  position: absolute;
+  text-align: right;
+}
+
+/* line 82, ../../../sass_upscale/components/_pages.scss */
+.content-table {
+  font-size: .875em;
+}
+/* line 84, ../../../sass_upscale/components/_pages.scss */
+.content-table td, .content-table th {
+  padding: 8px 10px;
+}
+/* line 87, ../../../sass_upscale/components/_pages.scss */
+.content-table thead {
+  background: #372d5f;
+  color: white;
+}
+/* line 93, ../../../sass_upscale/components/_pages.scss */
+.content-table th {
+  font-weight: normal;
+}
+/* line 96, ../../../sass_upscale/components/_pages.scss */
+.content-table .title-cell {
+  background: #908ec1;
+  text-align: right;
+  min-width: 180px;
+  font-weight: bold;
+}
+/* line 104, ../../../sass_upscale/components/_pages.scss */
+.content-table tbody tr {
+  background: #f7f7f7;
+}
+/* line 107, ../../../sass_upscale/components/_pages.scss */
+.content-table tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+/* line 113, ../../../sass_upscale/components/_pages.scss */
+.content-table tbody td {
+  border-bottom: 1px solid #cccccc;
+}
+/* line 115, ../../../sass_upscale/components/_pages.scss */
+.content-table tbody td.title-cell {
+  border-bottom-color: #706daf;
+}
+
+/* line 124, ../../../sass_upscale/components/_pages.scss */
+.left {
+  float: left;
+  margin-right: 30px;
+}
+
+/* line 129, ../../../sass_upscale/components/_pages.scss */
+.docs-footer-text {
+  text-align: right;
+  font-size: .8125em;
+  width: auto;
+}
+@media all and (min-width: 960px) {
+  /* line 129, ../../../sass_upscale/components/_pages.scss */
+  .docs-footer-text {
+    width: 600px;
+  }
+}
+
+/* line 139, ../../../sass_upscale/components/_pages.scss */
+#eu-logo {
+  width: 48px;
+  float: right;
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+/* line 1, ../../../sass_upscale/components/_navigation.scss */
+.docs-nav {
+  padding-top: 15px;
+}
+
+/* line 1, ../../../sass_upscale/components/_about.scss */
+.view-partners {
+  font-size: .8125em;
+}
+/* line 4, ../../../sass_upscale/components/_about.scss */
+.view-partners .views-row {
+  width: 48%;
+  float: left;
+  padding: 10px;
+  height: 140px;
+  overflow: hidden;
+  position: relative;
+  background: #f7f7f7;
+  margin: 1%;
+}
+/* line 15, ../../../sass_upscale/components/_about.scss */
+.view-partners .views-field-field-image {
+  padding: 0 10px;
+  width: 140px;
+}
+/* line 23, ../../../sass_upscale/components/_about.scss */
+.view-partners .views-field-field-url,
+.view-partners .views-field-field-mail,
+.view-partners .views-field-field-partner-contact,
+.view-partners .views-field-title {
+  position: absolute;
+  width: 100%;
+  top: 1.5em;
+  left: 155px;
+}
+/* line 33, ../../../sass_upscale/components/_about.scss */
+.view-partners .views-field-field-mail {
+  top: 4em;
+}
+/* line 36, ../../../sass_upscale/components/_about.scss */
+.view-partners .views-field-field-partner-contact {
+  top: 3em;
+}
+/* line 39, ../../../sass_upscale/components/_about.scss */
+.view-partners .views-field-field-url {
+  top: 5.5em;
+}
+/* line 42, ../../../sass_upscale/components/_about.scss */
+.view-partners .views-field-title {
+  font-weight: bold;
+}

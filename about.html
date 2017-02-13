@@ -1,0 +1,45 @@
+---
+layout: default
+title: About &middot; UpScale
+---
+
+<div class="docs-sub-header">
+  {% include masthead.html %}
+  <div class="container">
+    <div class="docs-sub-content">
+      <h2 class="page-title">About</h2>
+      <p class="page-description">Learn about the project's history and meet the maintaining team.</p>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container">
+  <div class="column-group">
+    <div class="column lg-units-12 docs-content">
+      <div class="docs-section">
+       <p>The <strong>UpScale</strong> Software Development Kit (UpScale  SDK) is a framework for the development of workload-intensive applications, with real-time requirements. </p>
+<p>The UpScale  SDK targets systems that demand more and more computational performance to  process large amounts of data from multiple data sources, whilst requiring  guarantees on processing response times. Many­core processor architectures  allow these performance requirements to be achieved, by integrating dozens or  hundreds of cores, interconnected with complex networks on chip, paving the way  for parallel computing. Unfortunately, parallelization brings many challenges,  by drastically affecting the system&rsquo;s timing behaviour: providing guarantees  becomes harder, because the behaviour of the system running on a multi­core  processor depends on interactions that are usually not known by the system  designer. This causes system analysts to struggle to provide timing guarantees  for such platforms.</p>
+<p>UpScale  tackles this challenge by including technologies from different computing  segments to successfully exploit the performance opportunities brought by  parallel programming models used in the high­performance domain and timing  analysis from the embedded real-time domain, for newest manycore embedded  processors available.</p>
+<p>The SDK  includes the following components:</p>
+<ul>
+  <li>Source  to source compiler – enabling to analyze source code OpenMP parallelism  annotations, extracting the required information to allow for efficient and predictable  mapping and scheduling of parallel computations.</li>
+  <li>Lightweight  OpenMP tasking runtime – a small-footprint implementation of the tasking model  of the latest OpenMP specification, which uses the information extracted by the  compiler to map OpenMP tasks to operating systems threads.  </li>
+  <li>Embedded  Many-Core Operating System – a small kernel implementation which efficiently  handles parallel threads in manycore platforms, supporting both static  assignment of threads to cores as well as global scheduling approaches. </li>
+  <li>Analysis  tools – an integrated toolset for the timing and schedulability analysis of  real-time parallel applications. </li>
+</ul>
+<p>UpScale is a result of the European project <a href="http://p-socrates.eu">P-SOCRATES (Parallel Software Framework for Time-Critical Many-core Systems,  FP7- 611016)</a>, which addressed the  challenges of predictability and performance of applications with  high-performance and real-time requirements. The consortium was led by  Instituto Superior de Engenharia do Porto, Portugal, and also comprised:  Barcelona Supercomputing Centre, Spain, University of Modena and Regio Emilia,  Italy, Swiss Federal Institute of Technology Zurich, Switzerland, Evidence SRL,  Italy, Active Technologies SRL, Italy and ATOS, Spain.</p>
+      </div>
+			<h3>Team Contacts</h3>
+			{% include partners.html %}
+			
+    </div>
+
+    
+  </div>
+
+  <div class="column">
+    <!-- Footer -->
+    {% include footer.html %}
+  </div>
+</div>
